@@ -347,6 +347,7 @@ config FB_ARMCLCD_SHARP_LQ057Q3DC02
 	  color QVGA, TFT panel.  The LogicPD device includes an
 	  The native resolution is 320x240.
 
+
 config FB_ARMCLCD_SHARP_LQ64D343
 	bool "LogicPD LCD 6.4\" VGA"
 	help
@@ -385,6 +386,12 @@ config FB_ARMCLCD_HITACHI
 	bool "Hitachi Wide Screen 800x480"
 	help
 	  This is an implementation of the Hitachi 800x480.
+
+config FB_MSM_MDDI_SWIFT
+       bool "MDDI LG GT540 Swift(Optimus)"
+       select FB_MSM_MDDI 
+       ---help---
+         Support for MDDI LG GT540 Swift(Optimus) 
 
 endchoice
 
